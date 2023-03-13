@@ -27,19 +27,17 @@ export const SideCardAlert = (
                 alt="Pancakes"
             />
             <div
-                className="text-2xl inline-block font-serif text-left"
+                className="text-xl "
                 style={{
                     position: "absolute",
-                    color: "white",
+                    color: "black",
                     top: 10,
                     left: "50%",
-                    transform: "translateX(-50%)",
-                    fontWeight: "bold",
-                    fontStyle: "italic",
-                    fontSize: "15px",
+                    transform: "translateX(-90%)",
                 }}
             >
-                Enjoy Your Finncial fredom with Bank You Cad
+                <div className="text-white text-lg mt-6 font-bold " >  Enjoy Your Finncial fredom with Bank You Cad</div>
+
                 <Button
                     sx={{ backgroundColor: "white", borderRadius: 6, marginTop: 4 }}
                 >
@@ -88,11 +86,12 @@ export const DebitCArd = (
                             <AssignmentIcon />
                         </Avatar>
                     </div>
-                    <div className="text-xs   ">
-                        Bill Ready to pay <br />
-                        <div className="mt-2 text-gray-400">
+                    <div style={{ width: "100px" }} className="text-xs w-16 ">
+                        <div className="font-bold">   Bill Ready to pay</div>
+                        <br />
+                        <div style={{ width: "200px" }} className="mt-2 text-gray-400 w-16">
                             {" "}
-                            You bill of 10000 kr to Name com Hostingis
+                            You bill of 10000 kr to Name com Hosting is ready for payment
                         </div>
                     </div>
                 </div>
