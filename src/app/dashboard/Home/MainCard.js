@@ -126,7 +126,7 @@ const MainCard = () => {
                   <Add />
                 </Avatar>
               </div>
-              <div className="font-bold">Breakfast </div>
+              <div className="font-bold">Add Money </div>
             </div>
             <div className="sm:0 md:flex space-x-5">
               <div>
@@ -134,7 +134,7 @@ const MainCard = () => {
                   <ArrowRightAlt />
                 </Avatar>
               </div>
-              <div className="font-bold">Breakfast </div>
+              <div className="font-bold">Send Money </div>
             </div>
 
             <div className="sm:0 md:flex space-x-5">
@@ -143,7 +143,7 @@ const MainCard = () => {
                   <KeyboardBackspace />
                 </Avatar>
               </div>
-              <div className="font-bold">Breakfast </div>
+              <div className="font-bold">Request Money </div>
             </div>
             <div className="sm:0 md:flex space-x-5">
               <div>
@@ -151,7 +151,7 @@ const MainCard = () => {
                   <AssignmentIcon />
                 </Avatar>
               </div>
-              <div className="font-bold">Breakfast </div>
+              <div className="font-bold">Pay Bills </div>
             </div>
           </div>
         </div>
