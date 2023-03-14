@@ -63,7 +63,7 @@ const SidebarNewV1 = ({
   return (
     <>
       <Box
-        className="font-ui-sans-serif "
+        className="font-lora"
         sx={{
           "& .pro-sidebar-inner": {
             background: `${colors.primary[400]} !important`,

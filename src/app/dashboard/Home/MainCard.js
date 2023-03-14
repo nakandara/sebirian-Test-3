@@ -38,7 +38,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const MainCard = () => {
   return (
     <Grid
-      className="max-w-screen-2xl font-ui-sans-serif drop-shadow-2xl"
+      className="max-w-screen-2xl font-lora drop-shadow-2xl"
       item
       xs={12}
       md={8}

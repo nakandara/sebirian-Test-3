@@ -36,7 +36,7 @@ export const SideCardAlert = (
                     transform: "translateX(-90%)",
                 }}
             >
-                <div className="text-white text-lg mt-6 font-bold " >  Enjoy Your Finncial fredom with Bank You Cad</div>
+                <div className="text-white text-lg mt-6 font-bold font-lora " >  Enjoy Your Finncial fredom with Bank You Cad</div>
 
                 <Button
                     sx={{ backgroundColor: "white", borderRadius: 6, marginTop: 4 }}
@@ -76,7 +76,7 @@ export const DebitCArd = (
                     transform: "translateX(-90%)",
                 }}
             >
-                <div className="font-bold">Alert Center</div>
+                <div className="font-bold font-lora">Alert Center</div>
                 <div className="flex flex-row space-x-6 m-2 ">
                     <div>
                         <Avatar
@@ -131,7 +131,7 @@ export const EnjoyCart = (
                 alt="Pancakes"
             />
             <div
-                className="font-bold"
+                className="font-bold font-lora"
                 style={{
                     position: "absolute",
 
