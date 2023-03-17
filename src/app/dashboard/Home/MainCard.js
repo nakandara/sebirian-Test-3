@@ -50,7 +50,7 @@ const MainCard = () => {
           p: 2,
           display: "flex",
           flexDirection: "column",
-          height: 300,
+          height: 350,
           minWidth: 400,
         }}
       >

@@ -80,19 +80,17 @@ function Dashboard() {
         <CssBaseline />
         <Box>
           <Toolbar />
-          <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            <Grid container spacing={3}>
+          <Container maxWidth="lg" sx={{ mt: 4, mb: 4, marginTop: "-70px" }}>
+            <Grid container spacing={4}>
               {/* Chart */}
               <MainCard />
+
               {/* Recent Deposits */}
-              <Grid item xs={12} md={4} lg={3}>
-                <div className="rounded">
+              <Grid item xs={8} md={1} lg={3}>
+                <div className="rounded  w-80 h-56  ">
                   {DebitCArd}
-                  <Divider />
                   {SideCardAlert}
-                  <Divider />
                   {EnjoyCart}
-                  <Divider />
                 </div>
               </Grid>
 

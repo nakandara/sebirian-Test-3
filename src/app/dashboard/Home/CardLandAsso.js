@@ -11,7 +11,7 @@ import image2 from '../../accets/jdnfnf.PNG'
 
 export default function CardLandAsso() {
     return (
-        <Box sx={{ flexGrow: 1, marginTop: 4 }}>
+        <Box sx={{ flexGrow: 1, marginTop: 6 }}>
             <Grid container spacing={2} columns={16} >
                 <Grid item xs={8}>
                     <Paper
