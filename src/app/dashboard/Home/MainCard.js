@@ -67,7 +67,7 @@ const MainCard = () => {
             </Typography>
             343443.3883 Kr
           </Typography>
-          <button class="ml-8 pb-8  bg-blue-500  w-1/6 text-white font-bold h-5 rounded hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-violet-300 ">
+          <button className="ml-8 pb-8  bg-blue-500  w-1/6 text-white font-bold h-5 rounded hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-violet-300 ">
             Active
           </button>
 
@@ -79,7 +79,7 @@ const MainCard = () => {
           </div>
           <br />
 
-          <div class="grid mb-4 grid-cols-4 gap-4">
+          <div className="grid mb-4 grid-cols-4 gap-4">
             <div className="sm:flex space-x-0 md:flex space-x-5">
               <div>
                 {" "}
@@ -119,7 +119,7 @@ const MainCard = () => {
 
           <hr />
 
-          <div class="grid mt-8 grid-cols-4 gap-4">
+          <div className="grid mt-8 grid-cols-4 gap-4">
             <div className="sm:0 md:flex space-x-5 ">
               <div>
                 <Avatar sx={{ bgcolor: "mediumseagreen" }}>

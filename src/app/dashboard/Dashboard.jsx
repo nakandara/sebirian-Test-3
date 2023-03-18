@@ -49,21 +49,21 @@ function Dashboard() {
 
   const [values, setValues] = useState([]);
 
-  useEffect(() => {
-    const fetchDashboardValues = async () => {
-      const controller = new AbortController();
-      try {
-        const dashValues = await axiosPrivate.get(API_URL, {
-          headers: {
-            signal: controller.signal,
-          },
-        });
+  // useEffect(() => {
+  //   const fetchDashboardValues = async () => {
+  //     const controller = new AbortController();
+  //     try {
+  //       const dashValues = await axiosPrivate.get(API_URL, {
+  //         headers: {
+  //           signal: controller.signal,
+  //         },
+  //       });
 
-        setValues(dashValues.data);
-      } catch (err) {}
-    };
-    fetchDashboardValues();
-  }, []);
+  //       setValues(dashValues.data);
+  //     } catch (err) {}
+  //   };
+  //   fetchDashboardValues();
+  // }, []);
 
   const formatter = new Intl.NumberFormat("en-US", {
     style: "currency",
@@ -87,13 +87,12 @@ function Dashboard() {
 
               {/* Recent Deposits */}
               <Grid item xs={8} md={1} lg={3}>
-                <div className="rounded  w-80 h-56  ">
+                <div className="rounded  w-80 h-56 ">
                   {DebitCArd}
                   {SideCardAlert}
                   {EnjoyCart}
                 </div>
               </Grid>
-
               {/* Recent Orders */}
             </Grid>
             <Copyright sx={{ pt: 4 }} />

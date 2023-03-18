@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function AppBar() {
     return (
         <Box className="drop-shadow-2xl" sx={{ flexGrow: 1 }}>
-            <div class="grid grid-cols-4 gap-4 font-lora drop-shadow-2xl ">
+            <div className="grid grid-cols-4 gap-4 font-lora drop-shadow-2xl ">
                 <div className="sm:flex  md:flex space-x-5 border-r border-blue-900">
                     <div> </div>
                     <div>

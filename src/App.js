@@ -1,5 +1,5 @@
 import React, { lazy, Suspense, useState } from "react";
-import { Route, Routes } from "react-router-dom";
+import { createBrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/pages/Layout";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
@@ -13,6 +13,52 @@ const Page404 = lazy(() => import("./components/pages/page404/Page404"));
 const AppHome = lazy(() => import("./components/pages/home/AppHome"));
 const Unauthorized = lazy(() => import("./components/pages/Unauthorized"));
 const Login = lazy(() => import("./app/login/Login"));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "login",
+        element: <Login />,
+        children: [{}],
+      },
+
+      {
+        path: "unauthorized",
+        element: <Unauthorized />
+      },
+      {
+        children: [
+          {
+            path: "/",
+            element: <AppHome />,
+            children: [
+              {
+                path: "/",
+                element: <Dashboard />
+              },
+              {
+                path: "Actions",
+                element: <Actions />
+              },
+              {
+                path: "primaryAcounts",
+                element: <PrimarryAccount />
+              }
+            ]
+          },
+          {
+            path: "*",
+            element: <Page404 />
+          }
+        ],
+      },
+    ],
+  },
+]
+);
 
 function App() {
   const [theme, colorMode] = useMode();
