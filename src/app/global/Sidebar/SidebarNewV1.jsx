@@ -22,20 +22,6 @@ import {
   FaAngleDoubleLeft,
   FaAngleDoubleRight,
   FaTachometerAlt,
-  FaGem,
-  FaList,
-  FaArchway,
-  FaRegLaughWink,
-  FaHeart,
-  FaDatabase,
-  FaUnity,
-  FaRegBuilding,
-  FaLaptopHouse,
-  FaUserAlt,
-  FaBuilding,
-  FaUserFriends,
-  FaCogs,
-  FaUsersCog,
 } from "react-icons/fa";
 
 import {

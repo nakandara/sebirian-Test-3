@@ -80,7 +80,7 @@ function Dashboard() {
         <CssBaseline />
         <Box>
           <Toolbar />
-          <Container maxWidth="lg" sx={{ mt: 4, mb: 4, marginTop: "-70px" }}>
+          <Container maxWidth="lg" sx={{ mt: 4, mb: 4, marginTop: "-60px" }}>
             <Grid container spacing={4}>
               {/* Chart */}
               <MainCard />
