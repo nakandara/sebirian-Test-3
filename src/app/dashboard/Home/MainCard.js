@@ -23,7 +23,9 @@ import {
   FreeBreakfastOutlined,
   KeyboardBackspace,
   Person4,
+  SoupKitchenOutlined,
   TaxiAlert,
+  TaxiAlertOutlined,
 } from "@mui/icons-material";
 import CardLandAsso from "./CardLandAsso";
 
@@ -83,7 +85,7 @@ const MainCard = () => {
             <div className="sm:flex space-x-0 md:flex space-x-5">
               <div>
                 {" "}
-                <DinnerDining />{" "}
+                <SoupKitchenOutlined />{" "}
               </div>
               <div>
                 Breakfast <br />
@@ -94,7 +96,7 @@ const MainCard = () => {
             <div className="sm:flex space-x-0 md:flex space-x-5">
               <div>
                 {" "}
-                <DinnerDining />{" "}
+                <TaxiAlertOutlined />{" "}
               </div>
               <div>
                 Taxi to Roskider <br />

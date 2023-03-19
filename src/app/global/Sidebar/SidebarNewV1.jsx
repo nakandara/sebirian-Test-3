@@ -41,10 +41,18 @@ import {
 import {
   AutoAwesome,
   Grid4x4,
+  Grid4x4Outlined,
   Home,
+  HomeMaxOutlined,
+  HomeOutlined,
+  MenuBookOutlined,
+  MenuOutlined,
   NearMe,
+  NearMeOutlined,
   Person4,
+  Person4Outlined,
   Style,
+  StyleOutlined,
   ViewAgenda,
 } from "@mui/icons-material";
 
@@ -130,36 +138,36 @@ const SidebarNewV1 = ({
                 letterSpacing: "1px",
               }}
             >
-              <MenuItem style={{ fontSize: 14 }} icon={<Home />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<HomeOutlined />}>
                 Home
                 <NavLink to="/" />
               </MenuItem>
 
-              <MenuItem style={{ fontSize: 14 }} icon={<NearMe />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<NearMeOutlined />}>
                 Actions
                 <NavLink to="/Actions" />
               </MenuItem>
 
-              <MenuItem style={{ fontSize: 14 }} icon={<Grid4x4 />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<Grid4x4Outlined />}>
                 Spaces
                 <NavLink to="/Spaces" />
               </MenuItem>
 
-              <MenuItem style={{ fontSize: 14 }} icon={<Style />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<StyleOutlined />}>
                 Cards
                 <NavLink to="/Cards" />
               </MenuItem>
 
-              <MenuItem style={{ fontSize: 14 }} icon={<Style />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<MenuOutlined />}>
                 Products
                 <NavLink to="/Products" />
               </MenuItem>
 
-              <MenuItem style={{ fontSize: 14 }} icon={<Person4 />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<MenuOutlined />}>
                 spendings
                 <NavLink to="/spendings" />
               </MenuItem>
-              <MenuItem style={{ fontSize: 14 }} icon={<Person4 />}>
+              <MenuItem style={{ fontSize: 14 }} icon={<Person4Outlined />}>
                 My Account
                 <NavLink to="/spendings" />
               </MenuItem>
