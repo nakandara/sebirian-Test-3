@@ -19,13 +19,10 @@ import { styled } from "@mui/material/styles";
 import {
   Add,
   ArrowRightAlt,
+  CoffeeOutlined,
   DinnerDining,
-  FreeBreakfastOutlined,
   KeyboardBackspace,
-  Person4,
-  SoupKitchenOutlined,
-  TaxiAlert,
-  TaxiAlertOutlined,
+  MinorCrashOutlined,
 } from "@mui/icons-material";
 import CardLandAsso from "./CardLandAsso";
 
@@ -40,7 +37,7 @@ const Item = styled(Paper)(({ theme }) => ({
 const MainCard = () => {
   return (
     <Grid
-      className="max-w-screen-2xl font-lora drop-shadow-2xl"
+      className=" max-w-screen-2xl  drop-shadow-2xl"
       item
       xs={12}
       md={8}
@@ -52,7 +49,7 @@ const MainCard = () => {
           p: 2,
           display: "flex",
           flexDirection: "column",
-          height: 350,
+          height: 310,
           minWidth: 400,
         }}
       >
@@ -62,21 +59,26 @@ const MainCard = () => {
             src="/broken-image.jpg"
           />
           <Typography
-            sx={{ fontWeight: "bold", letterSpacing: "2px", fontSize: 20 }}
+            sx={{
+              fontWeight: "bold",
+              letterSpacing: "2px",
+              fontSize: 20,
+              margin: "auto",
+            }}
           >
-            <Typography sx={{ fontWeight: "hidden" }}>
+            <Typography className="text-gray-400" sx={{ fontWeight: "hidden" }}>
               Primarry Acount
             </Typography>
-            343443.3883 Kr
+            2.560.731,56 Kr
           </Typography>
-          <button className="ml-8 pb-8  bg-blue-500  w-1/6 text-white font-bold h-5 rounded hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-violet-300 ">
-            Active
-          </button>
+          <Button className="h-8 w-8" variant="contained" size="small">
+            ACTIVE
+          </Button>
 
           {/* <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Button</button> */}
         </Stack>
         <div>
-          <div className="mt-3">
+          <div className="mt-3 menu text-lg">
             <h2>Recent Transations</h2>
           </div>
           <br />
@@ -85,22 +87,11 @@ const MainCard = () => {
             <div className="sm:flex space-x-0 md:flex space-x-5">
               <div>
                 {" "}
-                <SoupKitchenOutlined />{" "}
+                <CoffeeOutlined />{" "}
               </div>
-              <div>
+              <div className="menu text-md">
                 Breakfast <br />
-                <div className="font-bold">-80Kr</div>
-              </div>
-            </div>
-
-            <div className="sm:flex space-x-0 md:flex space-x-5">
-              <div>
-                {" "}
-                <TaxiAlertOutlined />{" "}
-              </div>
-              <div>
-                Taxi to Roskider <br />
-                <div className="font-bold">-270Kr</div>
+                <div className="font-bold menu text-sm">-80 Kr</div>
               </div>
             </div>
             <div className="flex space-x-4">
@@ -108,27 +99,38 @@ const MainCard = () => {
                 {" "}
                 <DinnerDining />{" "}
               </div>
-              <div>
+              <div className="menu text-md">
                 Peter Wilgard <br />
-                <div className="font-bold">-80Kr</div>
+                <div className="font-bold text-green-500 menu text-sm">
+                  1000 Kr
+                </div>
               </div>
             </div>
+            <div className="sm:flex space-x-0 md:flex space-x-5">
+              <div>
+                {" "}
+                <MinorCrashOutlined />{" "}
+              </div>
+              <div className="menu text-md">
+                Taxi to Roskider <br />
+                <div className="font-bold menu text-sm">-270 Kr</div>
+              </div>
+            </div>
+
             <div className=" flex space-x-4 border-l h-8">
               <div></div>
               <div className="text-green-400">View all</div>
             </div>
           </div>
 
-          <hr />
-
-          <div className="grid mt-8 grid-cols-4 gap-4">
+          <div className="grid mt-10 grid-cols-4 gap-4 ">
             <div className="sm:0 md:flex space-x-5 ">
               <div>
                 <Avatar sx={{ bgcolor: "mediumseagreen" }}>
                   <Add />
                 </Avatar>
               </div>
-              <div className="font-bold">Add Money </div>
+              <div className="font-semibold">Add Money </div>
             </div>
             <div className="sm:0 md:flex space-x-5">
               <div>
@@ -136,7 +138,7 @@ const MainCard = () => {
                   <ArrowRightAlt />
                 </Avatar>
               </div>
-              <div className="font-bold">Send Money </div>
+              <div className="font-semibold">Send Money </div>
             </div>
 
             <div className="sm:0 md:flex space-x-5">
@@ -145,7 +147,7 @@ const MainCard = () => {
                   <KeyboardBackspace />
                 </Avatar>
               </div>
-              <div className="font-bold">Request Money </div>
+              <div className="font-semibold">Request Money </div>
             </div>
             <div className="sm:0 md:flex space-x-5">
               <div>
@@ -153,7 +155,7 @@ const MainCard = () => {
                   <AssignmentIcon />
                 </Avatar>
               </div>
-              <div className="font-bold">Pay Bills </div>
+              <div className="font-semibold">Pay Bills </div>
             </div>
           </div>
         </div>

@@ -1,0 +1,30 @@
+.main {
+    font-family: "Gilroy Italic";   /*Can be any text*/
+    src: local("secondstyle"),
+      url("../../fonts/secondstyle.otf") format("otf");
+  }
+
+  .subone{
+    font-family: "Gilroy ExtraBold Italic";   /*Can be any text*/
+    src: local("Radomir Tinkov - Gilroy-ExtraBoldItalic"),
+      url("../../fonts/Radomir Tinkov - Gilroy-ExtraBoldItalic.otf") format("otf");
+  }
+  .subtwo{
+    font-family: "Gilroy Light Italic";   /*Can be any text*/
+    src: local("Radomir Tinkov - Gilroy-LightItalic"),
+      url("../../fonts/Radomir Tinkov - Gilroy-LightItalic.otf") format("otf");
+  }
+
+  .subthree{
+    font-family: "Gilroy Light";   /*Can be any text*/
+    src: local("Radomir Tinkov - Gilroy-Light"),
+      url("../../fonts/Radomir Tinkov - Gilroy-Light.otf") format("otf");
+  }
+  
+  .subfour{
+    font-family: "Gilroy";   /*Can be any text*/
+    src: local("Radomir Tinkov - Gilroy-Regular"),
+      url("../../fonts/Radomir Tinkov - Gilroy-Regular.otf") format("otf");
+  }
+  
+  

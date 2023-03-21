@@ -2,7 +2,7 @@ import React from 'react'
 
 const Actions = () => {
   return (
-    <div>Actions</div>
+    <h1 className='m-8'>Actions</h1>
   )
 }
 
